@@ -12,6 +12,8 @@
  * date:   01-09-2022
  */
 
+// INITIAL VARIABLES
+
 // the led is connected to pin 6
 const int led_pin = 6;
 
