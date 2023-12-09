@@ -220,11 +220,11 @@ void light_toggle()
     // send "ON" if the led is on, and "OFF" if the led is off
     if (light_state == HIGH)
     {
-      client.publish("alexshenfield/f/light-switch", "ON");
+      client.publish((USER_ID "/f/light-switch"), "ON");
     }
     else
     {
-      client.publish("alexshenfield/f/light-switch", "OFF");      
+      client.publish((USER_ID "/f/light-switch"), "OFF");      
     }
   }
 }
